@@ -213,16 +213,34 @@ body{
 
 .input-container{
     margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
 }
 
 .input-container input{
-    width: 400px;
+    width: 480px;
     height: 50px;
     border-radius: 20px;
     padding: 4px;
     font-size: 20px;
+    color: var(--darkBlackGrey);
 }
 
 .input-container button{
-    
+   width: 100px;
+   height: 50px;
+   border-radius: 10px;
+   padding: 4px;
+   font-size: 20px;
+   background-color: var(--darkBlackGrey);
+   color: var(--lightGrey);
+   border: 1px var(--smokeWhite) solid;
+}
+
+.input-container button:hover{
+    background-color: var(--smokeWhite);
+    color: var(--darkGrey);
+    transition: all .3s ease-in-out;
 }
